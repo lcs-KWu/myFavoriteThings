@@ -23,4 +23,4 @@ let Music = myFavoriteThings(name: "Favourite Music", description:"I listen to m
 
 let Basketball = myFavoriteThings(name: "Basketball", description:"I love playing basketball as a side sport, its a great way to imporve my speed, endurance and be active during winter.", image: "Basketball")
 
-let funStuffToDo = [Tennis, BBQ, Fishing, Music, Basketball]
+let favouriteThings = [Tennis, BBQ, Fishing, Music, Basketball]

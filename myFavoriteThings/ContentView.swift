@@ -10,8 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack{
-            List{
-               
+            List(favouriteThings) { currentThing in
+                Text(currentThing.name)
             }
             .navigationTitle(
                 "My favourite things"
@@ -26,19 +26,19 @@ struct ContentView: View {
 
 struct FavouriteThingsView: View {
     //stored properites
-
+    let providedThings: myFavoriteThings
     //computed properties
     var body: some View {
         HStack{
-            Image("Tennis")
+            Image(providedThings.image)
                 .resizable()
                 .frame(width: 60, height: 60)
             
             VStack{
-                Text("Tennis")
+                Text(providedThings.name)
                     .font(.system(size: 30, weight: .semibold))
                 Spacer()
-                Text("I play tennis")
+                Text(providedThings.description)
                     .font(.system(size: 20))
                 
             }
