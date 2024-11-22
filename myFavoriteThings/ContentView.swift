@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack{
             List{
-                ExtractedView()
+               
             }
             .navigationTitle(
                 "My favourite things"
@@ -24,7 +24,7 @@ struct ContentView: View {
     ContentView()
 }
 
-struct ExtractedView: View {
+struct FavouriteThingsView: View {
     //stored properites
 
     //computed properties
