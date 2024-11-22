@@ -27,6 +27,7 @@ struct ContentView: View {
 struct ExtractedView: View {
     //stored properites
 
+    //computed properties
     var body: some View {
         HStack{
             Image("Tennis")
