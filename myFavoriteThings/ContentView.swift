@@ -10,8 +10,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack{
-            List(favouriteThings) { currentThing in
-                Text(currentThing.name)
+            List(favouriteThings) { currentthings in
+                NavigationLink {
+                    FavouriteThingsdetailed(ThingsToShow: currentthings)
+                } label: {
+                    FavouriteThingsView(providedThings: currentthings)
+                }
             }
             .navigationTitle(
                 "My favourite things"
